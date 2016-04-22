@@ -1,7 +1,6 @@
 # SQLiteSava
 SQLliteSaveTool
-**初始化数据库   传入数据库路径  （创建数据库  如果不为nil的话是创建你传入进去的数据库，
-  为nil 的话就会使用默认的数据库）*/
+/**初始化数据库*/
 -(instancetype)initWithdbPath:(NSString *)dbPath;
 /**打开数据库**/
 - (BOOL)opendb;

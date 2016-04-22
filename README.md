@@ -3,9 +3,11 @@ SQLliteSaveTool
 #初始化数据库
 -(instancetype)initWithdbPath:(NSString *)dbPath;
 #打开数据库
-- (BOOL)opendb;
+- (BOOL)opendb;  - 
+
 #关闭数据库
-- (BOOL)closedb;
+- (BOOL)closedb; 
+- 
 #检测某数据库  是否纯在 此表
 - (BOOL)checkTable:(NSString *)tableName;
 

@@ -1,5 +1,6 @@
 # SQLiteSave
 
+
 -(instancetype)initWithdbPath:(NSString *)dbPath;
 - (BOOL)opendb;
 - (BOOL)closedb; 

@@ -6,9 +6,8 @@ SQLliteSaveTool
 - (BOOL)opendb;
 #关闭数据库
 - (BOOL)closedb; 
-#检测某数据库 是否纯在此表
+#检测某数据库 是否纯在此表#
 - (BOOL)checkTable:(NSString *)tableName;
-
 #创建表
 - (BOOL)createTableWithName:(NSString *)tableName;
 /**插入数据  object 是插入数据 json格式的字符串  或者是集成NSObject 自定义的model类

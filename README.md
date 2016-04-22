@@ -20,10 +20,10 @@
 - (NSArray *)dd_getAllData;
 + (NSArray *)dd_getAllData;
 - (id)dd_getDataFromId:(NSString *)ID;
-- (BOOL)dd_delegateAll;
-+ (BOOL)dd_delegateAll;
-- (BOOL)dd_delegateFromId:(NSString *)ID;
-+ (BOOL)dd_delegateFromId:(NSString *)ID;
+- (BOOL)dd_deleteAll;
++ (BOOL)dd_deleteAll;
+- (BOOL)dd_deleteFromId:(NSString *)ID;
++ (BOOL)dd_deleteFromId:(NSString *)ID;
 
 
 

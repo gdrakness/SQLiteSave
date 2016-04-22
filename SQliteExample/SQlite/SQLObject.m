@@ -73,7 +73,7 @@
     id selfObject =  [[self sqliteTool] getObjectfromTableName:[self tableName] intoSaveID:ID withClass:[self class]];
     return selfObject;
  }
--(BOOL)dd_delegateAll{
+-(BOOL)dd_deleteAll{
     if (![self dbOpen]) {return NO;}
      BOOL isdeleteAll =  [[self sqliteTool] deleteAllObjectfromTableName:[self tableName]];
     
@@ -84,23 +84,23 @@
     }
     return isdeleteAll;
 }
-+(BOOL)dd_delegateAll{
++(BOOL)dd_deleteAll{
     id class = [[self class]new];
-    BOOL isdeleteAll = [class dd_delegateAll];
+    BOOL isdeleteAll = [class dd_deleteAll];
     return isdeleteAll;
     
 }
 
--(BOOL)dd_delegateFromId:(NSString *)ID{
+-(BOOL)dd_deleteFromId:(NSString *)ID{
     if (![self dbOpen]) {return NO;}
-  BOOL isdeleateID = [[self sqliteTool]deleteObjectfromTableName:[self tableName] SaveID:ID];
-  return isdeleateID;
+  BOOL isdeleteID = [[self sqliteTool]deleteObjectfromTableName:[self tableName] SaveID:ID];
+  return isdeleteID;
     
 }
-+(BOOL)dd_delegateFromId:(NSString *)ID{
++(BOOL)dd_deleteFromId:(NSString *)ID{
     id class = [[self class]new];
-    BOOL isdeleateID = [class dd_delegateFromId:ID];
-    return isdeleateID;
+    BOOL isdeleteID = [class dd_deleteFromId:ID];
+    return isdeleteID;
 }
 @end
 const void *cacheKey;

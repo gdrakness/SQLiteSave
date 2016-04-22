@@ -29,13 +29,13 @@
 /**
  *  @return 全部删除  这个删除是把表直接删除
  */
-- (BOOL)dd_delegateAll;
-+ (BOOL)dd_delegateAll;
+- (BOOL)dd_deleteAll;
++ (BOOL)dd_deleteAll;
 /**
   @return 删除对应ID的数据
  */
-- (BOOL)dd_delegateFromId:(NSString *)ID;
-+ (BOOL)dd_delegateFromId:(NSString *)ID;
+- (BOOL)dd_deleteFromId:(NSString *)ID;
++ (BOOL)dd_deleteFromId:(NSString *)ID;
 
 
 

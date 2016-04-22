@@ -1,14 +1,14 @@
 # SQLiteSave
 SQLliteSaveTool
-#初始化数据库
+# 初始化数据库
 -(instancetype)initWithdbPath:(NSString *)dbPath;
-#打开数据库
+# 打开数据库
 - (BOOL)opendb;
-#关闭数据库
+# 关闭数据库
 - (BOOL)closedb; 
-#检测某数据库 是否纯在此表#
+# 检测某数据库 是否纯在此表
 - (BOOL)checkTable:(NSString *)tableName;
-#创建表
+# 创建表
 - (BOOL)createTableWithName:(NSString *)tableName;
 /**插入数据  object 是插入数据 json格式的字符串  或者是集成NSObject 自定义的model类
    系统的类，比如NSArray NSString NSDictionary 等等是不支持插入的

@@ -1,4 +1,4 @@
-# SQLiteSava
+# SQLiteSave
 SQLliteSaveTool
 /**初始化数据库*/
 -(instancetype)initWithdbPath:(NSString *)dbPath;
